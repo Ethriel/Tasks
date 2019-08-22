@@ -96,14 +96,17 @@ public:
 	void setHead() override
 	{
 		this->head = "<h1> Report #1 </h1>";
+		head.shrink_to_fit();
 	}
 	void setMain() override
 	{
 		this->main = "<body> Some text </body>";
+		main.shrink_to_fit();
 	}
 	void setFooter() override
 	{
 		this->footer = "<footer> Date     sign </footer>";
+		footer.shrink_to_fit();
 	}
 private:
 
